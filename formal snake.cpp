@@ -66,7 +66,7 @@ public:
 
 	void print_food(COORD p){
 	HANDLE Houtput = GetStdHandle(STD_OUTPUT_HANDLE);
-	color(C[len%5+1]);
+	color(C[(len+1)%5]);
 	SetConsoleCursorPosition(Houtput, p);
 	printf("$ ");
 	}
